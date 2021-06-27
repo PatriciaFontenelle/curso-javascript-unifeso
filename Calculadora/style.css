@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 303px;
+    height: 372px;
+    margin: auto;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#visor {
+    height: 100px;
+    background-color: #474746;
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+    padding: 0 20px;
+}
+
+#historico {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #d1d1d1;
+}
+
+#resultado {
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#container-botoes {
+    width: 303px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d1d1d1;
+    border-radius: 0 0 10px 10px;
+}
+
+.operacao, .numero {
+    text-decoration: none;
+    width: 75px;
+    height: 55px;
+    border-left: 0.25px solid #474746;
+    border-top: 0.25px solid #474746;
+    text-align: center;
+    line-height: 55px;
+    font-size: 28px;
+    color: #474746;
+}
+
+[id='0'] {
+    width: 150.5px;
+}
+
+a:nth-child(-n+4) {
+    border-top: 0px;
+}
+
+a:nth-child(4n+1) {
+    border-left: 0px;
+}
+
+a:nth-child(4n) {
+    background-color: #f5923b;
+    color: whitesmoke;
+}
+
+a:last-child {
+    background-color: #f5923b;
+    border-radius: 0 0 10px 0;
+    color: whitesmoke;
+}
+
+.operacao:active, .numero:active {
+    font-size: 20px;
+}
